@@ -32,7 +32,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:background="@drawable/estilo_bg_redondo"
             android:drawableStart="@drawable/icono_nombre"
             android:drawablePadding="10dp"
             android:hint="Ingresa tu nombre"
