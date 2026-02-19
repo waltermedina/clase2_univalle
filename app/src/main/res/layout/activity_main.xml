@@ -26,18 +26,25 @@
             android:textStyle="bold" />
 
         <!-- Ejemplo EditText -->
-        <EditText
-            android:id="@+id/etNombre"
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:drawableStart="@drawable/icono_nombre"
-            android:drawablePadding="10dp"
-            android:hint="Ingresa tu nombre"
-            android:inputType="text"
-            android:maxLength="10"
-            android:padding="12dp" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:drawableStart="@drawable/icono_nombre"
+                android:drawablePadding="10dp"
+                android:hint="@string/ingresa_tu_nombre"
+                android:inputType="text"
+                android:maxLength="10"
+                android:padding="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <!-- Ejemplo AutoCompleteTextView -->
         <AutoCompleteTextView
@@ -50,7 +57,7 @@
             android:hint="Ingrese información"
             android:padding="12dp" />
 
-        <!-- Ejemplo Button -->
+        <!-- Ejemplo Button standar-->
         <Button
             android:id="@+id/btn_iniciarSesion"
             android:layout_width="match_parent"
@@ -59,22 +66,23 @@
             android:layout_marginEnd="20dp"
             android:backgroundTint="@color/green"
             android:text="Iniciar sesión"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
 
-        <!-- Ejemplo Personalizar Button -->
-        <android.widget.Button
-            android:layout_width="wrap_content"
+
+        <!-- Ejemplo Button personalizado -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_iniciarSesionv2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:background="@drawable/estilo_bg_redondo"
-            android:backgroundTint="@color/blue"
-            android:drawableStart="@drawable/icono_nombre"
-            android:drawablePadding="5dp"
-            android:padding="8dp"
             android:text="Iniciar sesión"
-            android:textColor="@color/white" />
+            android:textColor="@color/black"
+            android:backgroundTint="@color/blue"
+            app:icon="@drawable/icono_nombre"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"/>
 
         <!-- Ejemplo imageButton -->
         <ImageButton

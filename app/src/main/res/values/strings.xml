@@ -4,6 +4,7 @@
     <string name="tv_new_titulo">Desarrollo de Aplicaciones</string>
     <string name="activar">activar</string>
     <string name="button_float">button_float</string>
+    <string name="ingresa_tu_nombre">Ingresa tu nombre</string>
 
     <string-array name="listaPaises">
         <item>Albania</item>

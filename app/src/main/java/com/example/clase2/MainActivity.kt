@@ -10,7 +10,6 @@ import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
 import androidx.databinding.DataBindingUtil
 import com.example.clase2.databinding.ActivityMainBinding
-import com.google.android.material.chip.Chip
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -57,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                binding.tvTitulo.setTextColor(Color.GREEN)
 //               val color = ContextCompat.getColor(this, R.color.orange)
 //               binding.tvTitulo.setTextColor(color)
-               val nuevoIcono = ContextCompat.getDrawable(this, R.drawable.ic_java)
+               val nuevoIcono = ContextCompat.getDrawable(this, R.drawable.ic_guardar)
                binding.etNombre.setCompoundDrawablesWithIntrinsicBounds(nuevoIcono, null, null, null)
 
            }else{
